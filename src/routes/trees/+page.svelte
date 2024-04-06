@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import SlideLink from "../SlideLink.svelte";
 
     //link to other website goes here
@@ -48,7 +50,7 @@
     <div class="cont-centre">
         <SlideLink
             text={"See what tree you can plant!"}
-            link={linkToExternal}
+            link="https://plexaar-classify.streamlit.app/";
             --color='green'
         />
     </div>
@@ -58,8 +60,7 @@
         <div class="bold28-ctr">Details about rewards.</div>
         <div class="text28-ctr">
             Our fund comes from carbon credits purchased by companies who exceed
-            their emissions. Hence this surplus money is used to pay people who
-            are interested in planting trees and making a positive impact for
+            their emissions. Hence this surplus money is used to pay people who are interested in planting trees and making a positive impact for
             the environment
         </div>
         <div class="spacer50"></div>

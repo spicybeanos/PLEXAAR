@@ -1,10 +1,11 @@
 <script>
+// @ts-nocheck
+
 
     import SlideLink from "../SlideLink.svelte"; 
-
- let linkToExternal = "";
+    let LinktoExternal="/";
 </script>
-
+    
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -17,50 +18,36 @@
             <div class="cont-0">
                 <h1 class="start">Food</h1>
                 <div class="text28">
-                    In the bustling urban landscape of Bengaluru, once renowned
-                    as the Garden City of India, the significance of trees in
-                    maintaining ecological balance cannot be overstated. As
-                    rapid urbanization transforms the cityscape, preserving and
-                    replenishing the lush greenery that once defined this
-                    metropolis is paramount. Here's how you can play a pivotal
-                    role in revitalizing Bengaluru's environment and restoring
-                    its cherished Garden City status!
+                    hi
                 </div>
             </div>
         </div>
         <div class="rowc">
             <div class="imgs-0">
-                <div class="imgs">
-                    <img src="imgs/tree1.jpg" alt="a tree" />
-                    <img src="imgs/tree2.jpg" alt="a tree" class="im1" />
-                    <img src="imgs/tree3.jpg" alt="a tree" class=" im2" />
-                </div>
+                
             </div>
         </div>
     </div>
     <h1>
-        Save the trees,<br />
-        Save the planet.
+        food<br />
+        yo food
     </h1>
-    <div class="bold28-ctr">Plant a tree and get a reward!</div>
+    <div class="bold28-ctr">food</div>
     <br />
     <br />
     <div class="cont-centre">
         <SlideLink
-            text={"See what tree you can plant!"}
-            link={linkToExternal}
+            text={"link to foodbanks"}
+            link={LinktoExternal};
             --color='green'
         />
     </div>
     <br />
     <br />
     <div class="cont-centre2">
-        <div class="bold28-ctr">Details about rewards.</div>
+        <div class="bold28-ctr">food</div>
         <div class="text28-ctr">
-            Our fund comes from carbon credits purchased by companies who exceed
-            their emissions. Hence this surplus money is used to pay people who
-            are interested in planting trees and making a positive impact for
-            the environment
+            food
         </div>
         <div class="spacer50"></div>
     </div>
