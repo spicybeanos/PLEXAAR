@@ -12,7 +12,7 @@
         formData.pass = p1;
 
         try {
-            const response = await fetch("https://example.com/api/endpoint", {
+            const response = await fetch("localhost:10000", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -38,17 +38,21 @@
         Name:
         <input type="text" bind:value={formData.name} />
     </label>
+    <br>
     <label>
         Email:
         <input type="email" bind:value={formData.email} />
     </label>
+    <br>
     <label>
         Password:
         <input type="password" bind:value={p1} />
     </label>
+    <br>
     <label>
         Confirm password:
         <input type="password" bind:value={p2} />
     </label>
+    <br>
     <button type="submit">Submit</button>
 </form>
