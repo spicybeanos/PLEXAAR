@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+
+<style>
+    :global(h1,div){
+        font-family: sans-serif, Geneva, Tahoma, sans-serif;
+    }
+.title{
+    max-width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+</style>
+
+<h1 class="title">The Bangaluru Upliftment Project</h1>
