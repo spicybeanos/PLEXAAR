@@ -43,16 +43,16 @@
         Save the planet.
     </h1>
     <div class="bold28-ctr">Plant a tree and get a reward!</div>
-    <br>
-    <br>
+    <br />
+    <br />
     <div class="cont-centre">
         <SlideLink
             text={"See what tree you can plant!"}
             link={linkToExternal}
         />
     </div>
-    <br>
-    <br>
+    <br />
+    <br />
     <div class="cont-centre2">
         <div class="bold28-ctr">Details about rewards.</div>
         <div class="text28-ctr">
@@ -66,7 +66,7 @@
 </div>
 
 <style>
-    .spacer50{
+    .spacer50 {
         margin-bottom: 50px;
     }
     .cont-centre {
@@ -149,7 +149,7 @@
         text-align: start;
         color: #030303;
     }
-    .text28-ctr{
+    .text28-ctr {
         font-size: 28px;
         display: inline;
         text-align: center;

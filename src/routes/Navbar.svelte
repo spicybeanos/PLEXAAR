@@ -18,10 +18,3 @@
     <NavLink link={"carbon"} text={"Carbon"} />
     <NavLink link={"contact"} text={"Contact us"} />
 </nav>
-
-<style>
-    .bar {
-        max-width: 105%;
-        max-height: max-content;
-    }
-</style>
