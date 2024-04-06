@@ -17,4 +17,5 @@
     <NavLink link={"food"} text={"Food"} />
     <NavLink link={"carbon"} text={"Carbon"} />
     <NavLink link={"contact"} text={"Contact us"} />
+    <NavLink link={"aboutus"} text={"About us"} />
 </nav>

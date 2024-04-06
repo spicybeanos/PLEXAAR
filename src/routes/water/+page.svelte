@@ -1,5 +1,9 @@
 <script>
     import Blog from "../Blog.svelte";
+
+    function fortfun(){
+        alert("yip")
+    }
 </script>
 
 <div class="super-root">
@@ -19,7 +23,10 @@
     </div>
     <div class="spacer50"></div>
     <div class="blog-box">
-        <Blog imgUrl="imgs/waterbuildin.jpg">
+        <Blog
+            imgUrl="imgs/water1.webp"
+            link="https://economictimes.indiatimes.com/news/india/as-indias-silicon-valley-runs-dry-this-bengaluru-doctor-has-some-water-saving-tips-you-can-use/articleshow/108594307.cms?from=mdr"
+        >
             <span slot="title">
                 Innovative Water-Saving Techniques Amid Bengaluru's Crisis
             </span>
@@ -32,7 +39,10 @@
                 home and ordering food to cope with scarcity.
             </span>
         </Blog>
-        <Blog imgUrl="imgs/waterbuildin.jpg">
+        <Blog
+            imgUrl="imgs/water2.webp"
+            link="https://ongrid.design/blogs/sustainable/water-conservation-techniques"
+        >
             <span slot="title"> Crafting Sustainable Homes in India </span>
             <span slot="body">
                 Amid India's water crisis, sustainable architecture offers
@@ -43,7 +53,11 @@
                 case studies reinforce context-specific measures for sensible
                 water budgeting.
             </span>
-        </Blog><Blog imgUrl="imgs/waterbuildin.jpg">
+        </Blog>
+        <Blog
+            imgUrl="imgs/waterbuildin.jpg"
+            link="https://smartwateronline.com/news/the-future-of-water-conservation-innovations-and-technology"
+        >
             <span slot="title">
                 Precision Agriculture, AI, and Water Efficiency: The Future of
                 Farming
@@ -62,6 +76,21 @@
                 farming practices.
             </span>
         </Blog>
+        <Blog>
+            <span slot="title">Water Neutral Buildings</span>
+            <span slot="body"
+                >Water-neutral buildings, such as the Green Solution House in
+                Denmark, utilize innovative design and technology to achieve a
+                zero water footprint. Through rainwater harvesting,
+                water-efficient fixtures, and treatment and reuse systems, they
+                reduce freshwater demand, improve water quality, and provide
+                cost savings. The Green Solution House reduced water consumption
+                by 75% compared to conventional hotels, showcasing the
+                effectiveness of this approach. Overall, water-neutral buildings
+                offer a promising solution to mitigate water scarcity challenges
+                and promote sustainability in urban development.</span
+            >
+        </Blog>
     </div>
 </div>
 
@@ -79,7 +108,12 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-        
+        background: radial-gradient(
+            rgb(126, 178, 215),
+            rgb(200, 193, 235),
+            rgb(255, 255, 255),
+            rgb(255, 255, 255)
+        );
     }
 
     h1 {

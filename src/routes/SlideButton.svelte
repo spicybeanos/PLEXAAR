@@ -1,18 +1,16 @@
 <script>
-    export let link = "";
-    export let text = "";
-    export let fsize = 28;
+    export let onClick = () =>{;} ;
 </script>
 
-<a href={link} style="font-size: {fsize}px;">
-    {text}
-</a>
+<button on:click={onClick}>
+    <slot/>
+</button>
 
 <style>
     :root{
         --color:#0000ff
     }
-    a {
+    button {
         padding: 10px 10px 10px 10px;
         background-color: rgba(0, 0, 0, 0);
         border-color: var(--color);
@@ -27,7 +25,7 @@
         transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         transition-delay: 0s !important;
     }
-    a::before {
+    button::before {
         position: absolute;
         content: "";
         top: 0;
@@ -38,12 +36,12 @@
         z-index: -1;
         transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
-    a:hover::before {
+    button:hover::before {
         width: 100%;
         left: 0;
         right: unset;
     }
-    a:hover {
+    button:hover {
         box-shadow:
             0 0 var(--color),
             0 0 #151515;
