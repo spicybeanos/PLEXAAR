@@ -1,5 +1,8 @@
 <script>
-    import Navbar from "../Navbar.svelte";
+    import SlideLink from "../SlideLink.svelte";
+
+    //link to other website goes here
+    let linkToExternal = "";
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,8 +15,8 @@
     <div class="rowp">
         <div class="rowc">
             <div class="cont-0">
-                <h1>Trees</h1>
-                <div class="text">
+                <h1 class="start">Trees</h1>
+                <div class="text28">
                     In the bustling urban landscape of Bengaluru, once renowned
                     as the Garden City of India, the significance of trees in
                     maintaining ecological balance cannot be overstated. As
@@ -35,10 +38,52 @@
             </div>
         </div>
     </div>
+    <h1>
+        Save the trees,<br />
+        Save the planet.
+    </h1>
+    <div class="bold28-ctr">Plant a tree and get a reward!</div>
+    <br>
+    <br>
+    <div class="cont-centre">
+        <SlideLink
+            text={"See what tree you can plant!"}
+            link={linkToExternal}
+        />
+    </div>
+    <br>
+    <br>
+    <div class="cont-centre2">
+        <div class="bold28-ctr">Details about rewards.</div>
+        <div class="text28-ctr">
+            Our fund comes from carbon credits purchased by companies who exceed
+            their emissions. Hence this surplus money is used to pay people who
+            are interested in planting trees and making a positive impact for
+            the environment
+        </div>
+        <div class="spacer50"></div>
+    </div>
 </div>
 
 <style>
-    .imgs-0{
+    .spacer50{
+        margin-bottom: 50px;
+    }
+    .cont-centre {
+        display: flex;
+        justify-content: center;
+    }
+    .cont-centre2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .super-root {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .imgs-0 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -64,11 +109,23 @@
         right: 0;
         z-index: -1;
     }
-    h1 {
+    h1.start {
         max-width: 100%;
         text-align: start;
         font-size: var(--h1ht);
         font-weight: 200;
+    }
+    h1 {
+        max-width: 100%;
+        text-align: center;
+        font-size: var(--h1ht);
+        font-weight: 200;
+    }
+    .bold28-ctr {
+        font-weight: 600;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 50px;
     }
     .rowp {
         display: flex;
@@ -86,10 +143,16 @@
         height: 288px;
         padding: none;
     }
-    .text {
+    .text28 {
         font-size: 28px;
         display: inline;
         text-align: start;
+        color: #030303;
+    }
+    .text28-ctr{
+        font-size: 28px;
+        display: inline;
+        text-align: center;
         color: #030303;
     }
 </style>

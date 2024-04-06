@@ -31,7 +31,7 @@
 <style>
     :global(h1,h2,div,p) {
         font-family: "Poppins", sans-serif;
-        --navbtn: #8a2be2;
+        --navbtn: #3ae22b;
         --txtwhite: #ffffff;
         --txtblack: #000000;
         --h1ht: 60px;
