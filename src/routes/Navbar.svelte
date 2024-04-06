@@ -4,8 +4,6 @@
     import NavbarButton from "./SlideLink.svelte";
     import SlideButton from "./SlideButton.svelte";
 
-
-
     function login(){
         alert('log in')
     }
