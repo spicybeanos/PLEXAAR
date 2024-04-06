@@ -1,5 +1,4 @@
 <script>
-    import NavbarButton from "./NavbarButton.svelte";
     import Navbar from "./navbar.svelte";
 </script>
 
