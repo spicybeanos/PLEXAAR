@@ -13,7 +13,7 @@
     h1 {
         max-width: 100%;
         text-align: center;
-        font-size: 70px;
+        font-size: var(--h1ht);
         font-weight: 200;
     }
 </style>

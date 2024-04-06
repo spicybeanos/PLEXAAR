@@ -3,7 +3,4 @@
 
 </script>
 
-
-
-
 <Navbar/>
