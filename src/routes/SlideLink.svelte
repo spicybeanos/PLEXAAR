@@ -9,10 +9,13 @@
 </a>
 
 <style>
+    :root{
+        --color:#0000ff
+    }
     a {
         padding: 10px 10px 10px 10px;
         background-color: rgba(0, 0, 0, 0);
-        border-color: var(--navbtn);
+        border-color: var(--color);
         border-width: 2px;
         display: inline-flex;
         position: relative;
@@ -31,7 +34,7 @@
         left: 0;
         width: 0%;
         height: 100%;
-        background: var(--navbtn);
+        background: var(--color);
         z-index: -1;
         transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
@@ -42,7 +45,7 @@
     }
     a:hover {
         box-shadow:
-            0 0 var(--navbtn),
+            0 0 var(--color),
             0 0 #151515;
         color: var(--txtwhite);
     }

@@ -1,4 +1,5 @@
 <script>
+    import Blog from "../Blog.svelte";
 </script>
 
 <div class="super-root">
@@ -13,97 +14,88 @@
         mitigate its impact.
     </div>
     <div class="spacer50"></div>
-    <div class="text28-ctr">
+    <div class="text28-ctr-pad">
         <h7>Some of the innovative solutions are listed below. </h7>
+    </div>
+    <div class="spacer50"></div>
+    <div class="blog-box">
+        <Blog imgUrl="imgs/waterbuildin.jpg">
+            <span slot="title">
+                Innovative Water-Saving Techniques Amid Bengaluru's Crisis
+            </span>
+            <span slot="body">
+                Dr. Divya Sharma, a Bengaluru doctor, shares water-saving tips,
+                including bucket baths and tap aerators, saving 600 liters daily
+                for her family. Her social media post receives praise, sparking
+                discussions on water conservation amid Bengaluru's severe water
+                crisis. Residents resort to creative measures like working from
+                home and ordering food to cope with scarcity.
+            </span>
+        </Blog>
+        <Blog imgUrl="imgs/waterbuildin.jpg">
+            <span slot="title"> Crafting Sustainable Homes in India </span>
+            <span slot="body">
+                Amid India's water crisis, sustainable architecture offers
+                solutions. Green building guidelines integrate water-saving
+                features, reducing residential water footprints. This article
+                outlines India's key guidelines, innovative technologies, and
+                design principles for water efficiency in homes. Local codes and
+                case studies reinforce context-specific measures for sensible
+                water budgeting.
+            </span>
+        </Blog><Blog imgUrl="imgs/waterbuildin.jpg">
+            <span slot="title">
+                Precision Agriculture, AI, and Water Efficiency: The Future of
+                Farming
+            </span>
+            <span slot="body">
+                Precision agriculture utilizes AI and data-driven technologies
+                to enhance water efficiency in farming. AI-driven systems like
+                smart irrigation, predictive analytics, and remote sensing
+                optimize water usage, reduce waste, and increase crop yields. A
+                cloud-based water management system in Australia's
+                Murray-Darling Basin, employing satellite data, achieved a 20%
+                improvement in irrigation efficiency, cost savings, and
+                environmental benefits. As climate change intensifies, AI-driven
+                precision agriculture offers promising solutions to global food
+                and water challenges, promoting sustainability and resilience in
+                farming practices.
+            </span>
+        </Blog>
     </div>
 </div>
 
 <style>
+    .blog-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .spacer50 {
         margin-bottom: 50px;
     }
-    .cont-centre {
-        display: flex;
-        justify-content: center;
-    }
-    .cont-centre2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+
     .super-root {
         display: flex;
         flex-direction: column;
         justify-items: center;
-        background-image: url("imgs/waterbackground.jpg");
+        
     }
-    .imgs-0 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height: 100%;
-    }
-    .imgs {
-        position: relative;
-        display: inline;
-        justify-content: center;
-    }
-    .im1 {
-        position: absolute;
-        bottom: 100px;
-        left: 0;
-    }
-    .cont-0 {
-        padding: 25px;
-    }
-    .im2 {
-        position: absolute;
-        bottom: -100px;
-        right: 0;
-        z-index: -1;
-    }
-    h1.start {
-        max-width: 100%;
-        text-align: start;
-        font-size: var(--h1ht);
-        font-weight: 200;
-    }
+
     h1 {
         max-width: 100%;
         text-align: center;
         font-size: var(--h1ht);
         font-weight: 200;
     }
-    .bold28-ctr {
-        font-weight: 600;
-        font-size: 28px;
-        text-align: center;
-        margin-top: 50px;
-    }
-    .rowp {
-        display: flex;
-        flex-direction: row;
-    }
-    .rowc {
-        display: flexbox;
-        width: 50%;
-        color: var(--txtblack);
-        padding: 15px;
-    }
-    img {
-        clip-path: circle(37%);
-        width: 50%;
-        height: 288px;
-        padding: none;
-    }
-    .text28 {
+    .text28-ctr {
         font-size: 28px;
         display: inline;
-        text-align: start;
+        text-align: center;
         color: #030303;
     }
-    .text28-ctr {
+    .text28-ctr-pad {
+        padding: 25px;
         font-size: 28px;
         display: inline;
         text-align: center;

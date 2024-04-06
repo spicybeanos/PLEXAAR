@@ -1,7 +1,6 @@
 <script>
     import Navbar from "./navbar.svelte";
     import Card from "./Card.svelte";
-    import { text } from "@sveltejs/kit";
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +28,7 @@
 </div>
 
 <style>
-    :global(h1,h2,div,p) {
+    :global(h1,h2,div,p,body) {
         font-family: "Poppins", sans-serif;
         --navbtn: #3ae22b;
         --txtwhite: #ffffff;

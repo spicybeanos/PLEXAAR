@@ -49,6 +49,7 @@
         <SlideLink
             text={"See what tree you can plant!"}
             link={linkToExternal}
+            --color='green'
         />
     </div>
     <br />
@@ -75,7 +76,7 @@
     }
     .cont-centre2 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
     }
     .super-root {
