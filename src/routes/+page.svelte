@@ -12,7 +12,6 @@
     rel="stylesheet"
 />
 
-<Navbar />
 <div class="super-root">
     <div class="colp">
         <div class="colc">

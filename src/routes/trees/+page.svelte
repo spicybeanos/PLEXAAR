@@ -16,7 +16,20 @@
         font-size: var(--h1ht);
         font-weight: 200;
     }
+    .rowp{
+        display: flex;
+        flex-direction: row;
+    }
+    .rowc{
+        max-width: 100%;
+        text-align: center;
+        color: var(--txtblack);
+    }
 </style>
-<Navbar />
+<div class="super-root">
+    <div class="rowp">
+
+    </div>
+</div>
 
 <h1>I love trees :)</h1>

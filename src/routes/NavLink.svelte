@@ -21,7 +21,7 @@
         text-decoration: none;
         color: var(--txtblack);
         margin: 10px 10px 10px 10px;
-        transition: 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transition: 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         transition-delay: 0s !important;
     }
     a::before {

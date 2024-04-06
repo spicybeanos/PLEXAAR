@@ -1,5 +1,5 @@
 <script>
-    export let title = "";
+    //export let title = "";
     export let text = "";
     export let imgsrc = "";
 </script>
