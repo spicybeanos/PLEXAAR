@@ -1,9 +1,10 @@
 <script>
     export let link = "";
     export let text = "";
+    export let fsize = 28;
 </script>
 
-<a href={link}>
+<a href={link} style="font-size: {fsize}px;">
     {text}
 </a>
 
