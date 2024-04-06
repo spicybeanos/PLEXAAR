@@ -2,4 +2,4 @@
     import SlideLink from "../SlideLink.svelte"; 
 </script>
 
-<SlideLink text={"food" } link={"food_auth"} fsize={12}/>
+<h1>hi </h1>
