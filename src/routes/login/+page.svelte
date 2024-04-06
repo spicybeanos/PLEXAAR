@@ -1,0 +1,54 @@
+<script>
+    
+    let formData = { email: "", name: "", pass: "" };
+    let p1 = "";
+    let p2 = "";
+
+    async function postData() {
+        if (!(p1 === p2)) {
+            alert("Passwords must match!");
+            return;
+        }
+        formData.pass = p1;
+
+        try {
+            const response = await fetch("https://example.com/api/endpoint", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+
+            const data = await response.json();
+            console.log("Response data:", data);
+        } catch (error) {
+            // @ts-ignore
+            console.error("Error:", error.message);
+        }
+    }
+</script>
+
+<form on:submit|preventDefault={postData}>
+    <label>
+        Name:
+        <input type="text" bind:value={formData.name} />
+    </label>
+    <label>
+        Email:
+        <input type="email" bind:value={formData.email} />
+    </label>
+    <label>
+        Password:
+        <input type="password" bind:value={p1} />
+    </label>
+    <label>
+        Confirm password:
+        <input type="password" bind:value={p2} />
+    </label>
+    <button type="submit">Submit</button>
+</form>

@@ -2,6 +2,13 @@
     import { text } from "@sveltejs/kit";
     import NavLink from "./NavLink.svelte";
     import NavbarButton from "./SlideLink.svelte";
+    import SlideButton from "./SlideButton.svelte";
+
+
+
+    function login(){
+        alert('log in')
+    }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,4 +25,6 @@
     <NavLink link={"carbon"} text={"Carbon"} />
     <NavLink link={"contact"} text={"Contact us"} />
     <NavLink link={"aboutus"} text={"About us"} />
+    <NavLink link={"login"} text={"Log In"} />
+    
 </nav>
