@@ -8,13 +8,9 @@
 </a>
 
 <style>
-    :root {
-        --navbtn: #8a2be2 ;
-        --txtwhite: #ffffff ;
-        --txtblack: #000000;
-    }
+    
     a {
-        padding: 10px;
+        padding: 10px 10px 10px 10px;
         border-radius: 15px;
         background-color: rgba(0, 0, 0, 0);
         border-color: var(--navbtn);
@@ -22,6 +18,7 @@
         border-style: solid;
         text-decoration: none;
         color: var(--txtblack);
+        margin: 10px 10px 10px 10px;
     }
 
     a:hover {
