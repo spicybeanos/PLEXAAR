@@ -27,7 +27,7 @@
         position: absolute;
         content: "";
         top: 0;
-        left: 0;
+        right: 0;
         width: 0%;
         height: 100%;
         background: var(--navbtn);
@@ -36,8 +36,8 @@
     }
     a:hover::before {
         width: 100%;
-        left: 0;
-        right: unset;
+        left: unset;
+        right: 0;
     }
     a:hover {
         box-shadow:
