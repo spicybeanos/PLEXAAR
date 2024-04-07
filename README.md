@@ -30,11 +30,11 @@ Markup:
 - Our project aims to address the current environmental and- ustainability crisis in the city of Bengaluru spanning over- fforestation, water scarcity and food wastage by using machine- earning, AI tools and other software solutions to help- ndividuals and cooperations uplift Bengaluru in a sustainable- ay forward 
 
 ## Tech-Stack
-- Svelte-Kit 
-- HTML, CSS and Js
-- Node-js 
-- Python for ML , link to github repository hosting the AI elements 
-- https://github.com/PlexiTAURAD/PlexAAR-AI
+- `Svelte-Kit` 
+- `HTML`, `CSS` and `Js`
+- `Node-js `
+- `Python` for ML , link to github repository hosting the AI elements 
+- `https://github.com/PlexiTAURAD/PlexAAR-AI`
 
 ## Key features about the Project
 - Focusing on practical implementation based solutions. 
@@ -50,3 +50,8 @@ Markup:
 - Promotion and awareness of water consumption at the household level, projected water conservation would be boosted by 30% according to surveys. Hence awareness would be beneficial. 
 
 ## Snippets from the project
+
+- ![Home page](https://raw.githubusercontent.com/spicybeanos/PLEXAAR/main/static/imgs/homepage.png)
+- ![Trees upper](https://raw.githubusercontent.com/spicybeanos/PLEXAAR/main/static/imgs/trees1.png)
+- ![Trees lower](https://raw.githubusercontent.com/spicybeanos/PLEXAAR/main/static/imgs/trees2.png)
+- ![Water](https://raw.githubusercontent.com/spicybeanos/PLEXAAR/main/static/imgs/water.png)
