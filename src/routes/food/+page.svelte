@@ -1,146 +1,82 @@
 <script>
-// @ts-nocheck
-
-
-    import SlideLink from "../SlideLink.svelte"; 
-    let LinktoExternal="/";
+    import SlideLink from "../SlideLink.svelte";
 </script>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
-/>
+
 <div class="super-root">
-    <div class="rowp">
-        <div class="rowc">
-            <div class="cont-0">
-                <h1 class="start">Food</h1>
-                <div class="text28">
-                    hi
-                </div>
-            </div>
-        </div>
-        <div class="rowc">
-            <div class="imgs-0">
-                
-            </div>
+    <div class="title">
+        <h1>Food</h1>
+    </div>
+    <div class="blank4">
+
+    </div>
+    <div class="subtext">
+        <h7>In the city of Bengaluru, food stands as a fundamental pillar of human survival and well-being. Yet, amidst the bustling streets and glittering skyscrapers, many of our fellow residents struggle to access nutritious meals on a daily basis. Recognizing the urgency of this issue, we've devised a solution that not only addresses hunger but also fosters community solidarity: connecting those in need with individuals and organizations willing to donate food.</h7>
+    </div>
+    <div class="blank">
+
+    </div>
+    <div class="solutions">
+        <h1>Solutions</h1>
+    </div>
+    <div class="blank2">
+
+    </div>
+    <div class="subtext">
+        <h7>In the city of Bengaluru, food stands as a fundamental pillar of human survival and well-being. Yet, amidst the bustling streets and glittering skyscrapers, many of our fellow residents struggle to access nutritious meals on a daily basis. Recognizing the urgency of this issue, we've devised a solution that not only addresses hunger but also fosters community solidarity: connecting those in need with individuals and organizations willing to donate food.</h7>
+    </div>
+    <div class="blank3">
+
+    </div>
+    <div class="quote">
+        <h1>Hunger is not an issue of charity. </h1>
+        <div class="subqoute">
+            <h1><br>It is an issue of justice.</h1>
         </div>
     </div>
-    <h1>
-        food<br />
-        yo food
-    </h1>
-    <div class="bold28-ctr">food</div>
-    <br />
-    <br />
-    <div class="cont-centre">
+    <div class="slide">
         <SlideLink
-            text={"link to foodbanks"}
-            link={LinktoExternal};
-            --color='green'
-        />
-    </div>
-    <br />
-    <br />
-    <div class="cont-centre2">
-        <div class="bold28-ctr">food</div>
-        <div class="text28-ctr">
-            food
-        </div>
-        <div class="spacer50"></div>
+        text={"Feed people or get food!"} link="/"  --color='rgb(226, 199, 125)'/>
     </div>
 </div>
 
+
 <style>
-    .spacer50 {
-        margin-bottom: 50px;
-    }
-    .cont-centre {
-        display: flex;
-        justify-content: center;
-    }
-    .cont-centre2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
     .super-root {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-    }
-    .imgs-0 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height: 100%;
-    }
-    .imgs {
-        position: relative;
-        display: inline;
-        justify-content: center;
-    }
-    .im1 {
-        position: absolute;
-        bottom: 100px;
-        left: 0;
-    }
-    .cont-0 {
-        padding: 25px;
-    }
-    .im2 {
-        position: absolute;
-        bottom: -100px;
-        right: 0;
-        z-index: -1;
-    }
-    h1.start {
-        max-width: 100%;
-        text-align: start;
-        font-size: var(--h1ht);
-        font-weight: 200;
-    }
-    h1 {
-        max-width: 100%;
-        text-align: center;
-        font-size: var(--h1ht);
-        font-weight: 200;
-    }
-    .bold28-ctr {
-        font-weight: 600;
-        font-size: 28px;
-        text-align: center;
-        margin-top: 50px;
-    }
-    .rowp {
-        display: flex;
-        flex-direction: row;
-    }
-    .rowc {
-        display: flexbox;
-        width: 50%;
-        color: var(--txtblack);
-        padding: 15px;
-    }
-    img {
-        clip-path: circle(37%);
-        width: 50%;
-        height: 288px;
-        padding: none;
-    }
-    .text28 {
-        font-size: 28px;
-        display: inline;
-        text-align: start;
-        color: #030303;
-    }
-    .text28-ctr {
-        font-size: 28px;
-        display: inline;
-        text-align: center;
-        color: #030303;
-    }
+    display: flex;
+    height: 100%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+    padding: 20px; /* Add padding around the content */
+    background: radial-gradient(
+        rgb(186, 160, 82),
+        rgb(226, 199, 125),
+        rgb(230, 212, 170),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255)
+    );
+}
+
+/* Adjust the margin for blank divs to use padding instead for better control */
+.blank4, .blank, .blank2, .blank3 {
+    padding: 45px 0; /* Vertical padding for spacing */
+}
+
+/* Ensure text and other elements are centered within their containers */
+.title, .subtext, .solutions, .quote, .subquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure they take full width */
+    padding:25px;
+}
+
+/* Adjust the slide container for better centering */
+.slide {
+    display: flex;
+    justify-content: center;
+    margin: 50px; /* Adjust margin as needed */
+    width: 100%; /* Ensure it takes full width */
+}
+
 </style>
