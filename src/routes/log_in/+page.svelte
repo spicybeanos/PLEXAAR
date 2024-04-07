@@ -23,7 +23,15 @@
             }
 
             const data = await response.json();
+            let {result,reason} = JSON.parse(data);
             console.log("Response data:", data);
+            if(result === 'success'){
+                alert('Logged in successfuly!');
+            }
+            else{
+                alert('Could not log in:'+reason)
+            }
+            
         } catch (error) {
             // @ts-ignore
             console.error("Error:", error.message);
