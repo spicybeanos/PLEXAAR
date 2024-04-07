@@ -35,29 +35,54 @@
         }
     }
 </script>
-
-<form on:submit|preventDefault={postData}>
-    <label>
-        Name:
-        <input type="text" bind:value={formData.name} />
-    </label>
-    <br>
-    <label>
-        Email:
-        <input type="email" bind:value={formData.email} />
-    </label>
-    <br>
-    <label>
-        Password:
-        <input type="password" bind:value={p1} />
-    </label>
-    <br>
-    <label>
-        Confirm password:
-        <input type="password" bind:value={p2} />
-    </label>
-    <br>
-    <button type="submit">Submit</button>
-</form>
-
-<SlideLink 
+<style>
+    .main{
+        display:flex; 
+        align-items: center;
+        justify-content: center;
+        margin:100px;
+        border:2px black;
+        
+    }
+    .slidelink{
+        display:flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    .submit{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin:30px;
+    }
+</style>
+<div class="main">
+    <form on:submit|preventDefault={postData}>
+        <label>
+            Name:
+            <input type="text" bind:value={formData.name} />
+        </label>
+        <br>
+        <label>
+            Email:
+            <input type="email" bind:value={formData.email} />
+        </label>
+        <br>
+        <label>
+            Password:
+            <input type="password" bind:value={p1} />
+        </label>
+        <br>
+        <label>
+            Confirm password:
+            <input type="password" bind:value={p2} />
+        </label>
+        <br>
+        <div class="submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<div class="slidelink">
+    <SlideLink text={"Already have an account? Click here to login"} link="../log_in" fsize={10}/> 
+</div>
