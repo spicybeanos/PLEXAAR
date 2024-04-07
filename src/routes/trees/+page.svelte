@@ -50,7 +50,7 @@
     <div class="cont-centre">
         <SlideLink
             text={"See what tree you can plant!"}
-            link="https://plexaar-classify.streamlit.app/";
+            link="https://plexaar-tree.streamlit.app/";
             --color='green'
         />
     </div>
