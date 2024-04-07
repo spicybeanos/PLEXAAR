@@ -15,15 +15,17 @@
     <div class="colp">
         <div class="colc">
             <h1 class="title">One-stop upliftment for Bengaluru</h1>
-            <div class="ctext">All your environmental problems end here.</div>
+            <div class="ctext">
+                All your environmental problems end here.
+            </div>
+            <div class="textbody">
+                <h7>Our platform aims to address the current environmental and sustainability crisis in the city of Bengaluru spanning over afforestation, water scarcity and food wastage by using machine learning, AI tools and other software solutions to help individuals and cooperations uplift Bengaluru in a sustainable way forward.</h7>
+            </div>
+            <div class="second-body">
+                <h7>Our platform serves as a catalyst for positive change in Bengaluru, fostering a culture of sustainability and resilience through technological innovation and collective action. By harnessing the power of data and AI, we strive to create a future where environmental stewardship, social equity, and economic prosperity go hand in hand, ensuring a thriving and livable city for generations to come.</h7>
+            </div>
         </div>
         <img src="imgs/bng.jpg" alt="">
-    </div>
-    <h2>
-    Domains we cover
-    </h2>
-    <div class="card-holder">
-        <Card text={'fortnite'} imgsrc ={'imgs/bng.jpg'}/>
     </div>
 </div>
 
@@ -71,5 +73,15 @@
     .card-holder{
         display: flex;
         justify-content: center;
+    }
+    .textbody{
+        display:flex;
+        justify-content: center;
+        margin:40px; 
+    }
+    .second-body{
+        display: flex;
+        justify-content: center;
+        margin:40px;
     }
 </style>

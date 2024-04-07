@@ -35,26 +35,46 @@
         }
     }
 </script>
-<form on:submit|preventDefault={postData}>
-    <label>
-        Name:
-        <input type="text" bind:value={formData.name} />
-    </label>
-    <br>
-    <label>
-        Email:
-        <input type="email" bind:value={formData.email} />
-    </label>
-    <br>
-    <label>
-        Password:
-        <input type="password" bind:value={p1} />
-    </label>
-    <br>
-    <label>
-        Confirm password:
-        <input type="password" bind:value={p2} />
-    </label>
-    <br>
-    <button type="submit">Submit</button>
-</form>
+<div class="main">
+    
+    <form on:submit|preventDefault={postData}>
+        <div class="heading">
+            <h3>Login</h3>
+        </div>
+        <div class="basic_login">
+            <label>
+                Email:
+                <input type="email" bind:value={formData.email} />
+            </label>
+            <br>
+            <label>
+                Password:
+                <input type="password" bind:value={p1} />
+            </label>
+        </div>
+        <div class="submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<style>
+    .main{
+        display:flex; 
+        align-items: center;
+        justify-content: center;
+        margin:100px;
+        border:2px black;    
+    }
+    .submit{
+        display:flex; 
+        align-items: center;
+        justify-content: center;
+        margin:30px;
+    }
+    .heading{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
