@@ -50,20 +50,17 @@
     <div class="cont-centre">
         <SlideLink
             text={"See what tree you can plant!"}
-            link="https://plexaar-classify.streamlit.app/";
+            link="https://plexaar-tree.streamlit.app/";
             --color='green'
         />
     </div>
     <br />
     <br />
-    <div class="cont-centre2">
-        <div class="bold28-ctr">Details about rewards.</div>
-        <div class="text28-ctr">
-            Our fund comes from carbon credits purchased by companies who exceed
-            their emissions. Hence this surplus money is used to pay people who are interested in planting trees and making a positive impact for
-            the environment
-        </div>
-        <div class="spacer50"></div>
+    <div class="bold28-ctr">Details about rewards.</div>
+    <div class="text28-ctr">
+        Our fund comes from carbon credits purchased by companies who exceed
+        their emissions. Hence this surplus money is used to pay people who are interested in planting trees and making a positive impact for
+        the environment
     </div>
 </div>
 
@@ -73,11 +70,6 @@
     }
     .cont-centre {
         display: flex;
-        justify-content: center;
-    }
-    .cont-centre2 {
-        display: flex;
-        flex-direction: row;
         justify-content: center;
     }
     .super-root {
@@ -94,7 +86,7 @@
     }
     .imgs {
         position: relative;
-        display: inline;
+        display: flex;
         justify-content: center;
     }
     .im1 {
@@ -127,7 +119,7 @@
         font-weight: 600;
         font-size: 28px;
         text-align: center;
-        margin-top: 50px;
+        margin: 50px;
     }
     .rowp {
         display: flex;
@@ -147,14 +139,16 @@
     }
     .text28 {
         font-size: 28px;
-        display: inline;
+        display: flex;
         text-align: start;
         color: #030303;
     }
     .text28-ctr {
         font-size: 28px;
-        display: inline;
+        display: flex;
         text-align: center;
         color: #030303;
+        margin:50px;
     }
+    
 </style>

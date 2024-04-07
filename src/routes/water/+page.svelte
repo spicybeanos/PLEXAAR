@@ -55,7 +55,7 @@
             </span>
         </Blog>
         <Blog
-            imgUrl="imgs/waterbuildin.jpg"
+            imgUrl="imgs/farming.jpg"
             link="https://smartwateronline.com/news/the-future-of-water-conservation-innovations-and-technology"
         >
             <span slot="title">
@@ -76,7 +76,10 @@
                 farming practices.
             </span>
         </Blog>
-        <Blog>
+        <Blog
+            imgUrl="imgs/waterbuildin.jpg"
+            link="https://smartwateronline.com/news/the-future-of-water-conservation-innovations-and-technology"
+        >
             <span slot="title">Water Neutral Buildings</span>
             <span slot="body"
                 >Water-neutral buildings, such as the Green Solution House in

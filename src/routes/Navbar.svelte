@@ -20,9 +20,7 @@
     <NavLink link={"trees"} text={"Trees"} />
     <NavLink link={"water"} text={"Water"} />
     <NavLink link={"food"} text={"Food"} />
-    <NavLink link={"carbon"} text={"Carbon"} />
-    <NavLink link={"contact"} text={"Contact us"} />
+    <NavLink link={"contactus"} text={"Contact us"} />
     <NavLink link={"aboutus"} text={"About us"} />
-    <NavLink link={"log_in"} text={"Log In"} />
-    
+    <NavLink link={"login"} text={"Log In"} />
 </nav>
