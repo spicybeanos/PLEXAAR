@@ -28,7 +28,15 @@
             }
 
             const data = await response.json();
+            let {result,reason} = JSON.parse(data);
             console.log("Response data:", data);
+            if(result === 'success'){
+                alert('Account created!');
+            }
+            else{
+                alert('Could not create account:'+reason)
+            }
+            
         } catch (error) {
             // @ts-ignore
             console.error("Error:", error.message);
