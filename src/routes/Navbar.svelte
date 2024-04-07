@@ -22,5 +22,5 @@
     <NavLink link={"food"} text={"Food"} />
     <NavLink link={"contactus"} text={"Contact us"} />
     <NavLink link={"aboutus"} text={"About us"} />
-    <NavLink link={"log_in"} text={"Log In"} />
+    <NavLink link={"sign_up"} text={"Sign up"} />
 </nav>
