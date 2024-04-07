@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+    // @ts-nocheck
 
     import SlideLink from "../SlideLink.svelte";
 
@@ -50,21 +50,34 @@
     <div class="cont-centre">
         <SlideLink
             text={"See what tree you can plant!"}
-            link="https://plexaar-tree.streamlit.app/";
-            --color='green'
+            link="https://plexaar-tree.streamlit.app/"
+            ;
+            --color="green"
         />
     </div>
+    <div class="colpi">
+        <img src="imgs/8.png" alt="picutre" />
+        <img src="imgs/9.png" alt="picutre" />
+        <img src="imgs/10.png" alt="picutre" />
+    </div>
+
     <br />
     <br />
     <div class="bold28-ctr">Details about rewards.</div>
     <div class="text28-ctr">
         Our fund comes from carbon credits purchased by companies who exceed
-        their emissions. Hence this surplus money is used to pay people who are interested in planting trees and making a positive impact for
-        the environment
+        their emissions. Hence this surplus money is used to pay people who are
+        interested in planting trees and making a positive impact for the
+        environment
     </div>
 </div>
 
 <style>
+    .colpi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .spacer50 {
         margin-bottom: 50px;
     }
@@ -148,7 +161,6 @@
         display: flex;
         text-align: center;
         color: #030303;
-        margin:50px;
+        margin: 50px;
     }
-    
 </style>

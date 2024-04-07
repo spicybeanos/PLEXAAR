@@ -20,11 +20,12 @@ import SlideLink from "../SlideLink.svelte";
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
     width: 30%;
     padding: 20px;
     border: 1px solid #173517;
-    border-radius: 5px;
-    background-color: #8b8181;
+    border-radius: 20px;
+    background-color: #cfdbfd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 50px auto 0; /* Add a top margin of 50px */
     height: 60vh;
