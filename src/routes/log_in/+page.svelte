@@ -1,6 +1,6 @@
 <script>
     
-    let formData = { email: "", name: "", pass: "" };
+    let formData = { email: "", name: "", pass: "" ,type:"sign-up"};
     let p1 = "";
     let p2 = "";
 
@@ -12,7 +12,7 @@
         formData.pass = p1;
 
         try {
-            const response = await fetch("localhost:10000", {
+            const response = await fetch("http://localhost:10000/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

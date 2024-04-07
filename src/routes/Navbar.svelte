@@ -23,6 +23,6 @@
     <NavLink link={"carbon"} text={"Carbon"} />
     <NavLink link={"contact"} text={"Contact us"} />
     <NavLink link={"aboutus"} text={"About us"} />
-    <NavLink link={"login"} text={"Log In"} />
+    <NavLink link={"log_in"} text={"Log In"} />
     
 </nav>
