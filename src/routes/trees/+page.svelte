@@ -49,37 +49,83 @@
     <br />
     <div class="cont-centre">
         <SlideLink
-            text={"See what tree you can plant!"}
+            text={"Survey your area"}
             link="https://plexaar-tree.streamlit.app/"
+            ;
+            --color="green"
+        />
+        <SlideLink
+            text={"See what tree you can plant!"}
+            link="https://plexaar-classify.streamlit.app/"
             ;
             --color="green"
         />
     </div>
     <div class="colpi">
-        <img src="imgs/8.png" alt="picutre" />
-        <img src="imgs/9.png" alt="picutre" />
-        <img src="imgs/10.png" alt="picutre" />
+        <div class="title_categ1">
+            Category 1
+            <div class="categ1">
+                <ol>
+                    <li>Average yearly offset: 22kgs</li>
+                    <li>
+                        Cosidering 80% of the offset: [(80 x 22 /100)=17.6kg]
+                        converting it to tonnes=0.01732
+                    </li>
+                    <li>0.01732 x 5400 INR = 93.52 INR</li>
+                </ol>
+            </div>
+        </div>
+        <div class="title_categ2">
+            Category 2
+            <div class="categ2">
+                <ol>
+                    <li>Average yearly offset: 44kgs</li>
+                    <li>
+                        Cosidering 80% of the offset: [(80 x 44 /100)=35.2kg]
+                        converting it to tonnes=0.03464
+                    </li>
+                    <li>0.03464 x 5400 INR = 187.08 INR</li>
+                </ol>
+            </div>
+        </div>
     </div>
+        <div class="title_categ3">
+            Category 3</div>
+            <div class="categ3">
+                <ol>
+                    <li>Average yearly offset: 67kgs</li>
+                    <li>
+                        Cosidering 80% of the offset: [(80 x 67 /100)=53.6kg]
+                        converting it to tonnes=0.05275
+                    </li>
+                    <li>0.05275 x 5400 INR = 284.88 INR</li>
+                </ol>
+            </div>
+        </div>
+    
 
-    <br />
-    <br />
-    <div class="bold28-ctr">Details about rewards.</div>
-    <div class="text28-ctr">
-        Our fund comes from carbon credits purchased by companies who exceed
-        their emissions. Hence this surplus money is used to pay people who are
-        interested in planting trees and making a positive impact for the
-        environment
-    </div>
+<div class="bold28-ctr">Details about rewards.</div>
+<div class="text28-ctr">
+    Our fund comes from carbon credits purchased by companies who exceed their
+    emissions. Hence this surplus money is used to pay people who are interested
+    in planting trees and making a positive impact for the environment
 </div>
 
 <style>
-    .colpi{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .colpi {
+        margin:40px; 
+        display: flex; /* Use flex to align items horizontally */
+        justify-content: space-between; /* Space out the items evenly */
+        flex-wrap: wrap; /* Allow items to wrap onto multiple lines if necessary */
     }
-    .spacer50 {
-        margin-bottom: 50px;
+    .categ3{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .title_categ3{
+        display: flex;
+        justify-content: center;
     }
     .cont-centre {
         display: flex;
