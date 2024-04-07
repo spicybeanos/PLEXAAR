@@ -1,8 +1,9 @@
 <script>
+    export let type = '';
     export let onClick = () =>{;} ;
 </script>
 
-<button on:click={onClick}>
+<button on:click={onClick} type='{type}'>
     <slot/>
 </button>
 

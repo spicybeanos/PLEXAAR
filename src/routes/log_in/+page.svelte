@@ -1,17 +1,12 @@
 <script>
     import NavLink from "../NavLink.svelte";
+    import SlideButton from "../SlideButton.svelte";
     import SlideLink from "../SlideLink.svelte";
 
-    
-    let formData = { email: "", name: "", pass: "" ,type:"sign-up"};
+    let formData = { email: "", pass: "", type: "log-in" };
     let p1 = "";
-    let p2 = "";
 
     async function postData() {
-        if (!(p1 === p2)) {
-            alert("Passwords must match!");
-            return;
-        }
         formData.pass = p1;
 
         try {
@@ -35,46 +30,62 @@
         }
     }
 </script>
+
 <div class="main">
-    
     <form on:submit|preventDefault={postData}>
-        <div class="heading">
-            <h3>Login</h3>
-        </div>
-        <div class="basic_login">
-            <label>
-                Email:
-                <input type="email" bind:value={formData.email} />
-            </label>
-            <br>
-            <label>
-                Password:
-                <input type="password" bind:value={p1} />
-            </label>
+        <div class="rowp">
+            <div class="colp">
+                <div class="text24">Email:</div>
+                <input type="email" bind:value={formData.email} /><br />
+                <div class="text24">Password:</div>
+                <input type="password" bind:value={p1} /><br />
+            </div>
         </div>
         <div class="submit">
-            <button type="submit">Submit</button>
+            <SlideButton type="{'submit'};" --color="green"
+                ><div class="text24">Log in</div></SlideButton
+            >
         </div>
     </form>
 </div>
+<div class="rowp">
+    <SlideLink
+        text={"Don't have an account? Sign up!"}
+        link="../sign_up"
+        fsize={18}
+    />
+</div>
 
 <style>
-    .main{
-        display:flex; 
-        align-items: center;
-        justify-content: center;
-        margin:100px;
-        border:2px black;    
+    input {
+        font-size: 24px;
     }
-    .submit{
-        display:flex; 
-        align-items: center;
-        justify-content: center;
-        margin:30px;
+    .text24 {
+        font-size: 24px;
+        display: flex;
+        text-align: start;
+        color: #030303;
     }
-    .heading{
-        display:flex;
+    .main {
+        display: flex;
         align-items: center;
         justify-content: center;
+        margin: 50px;
+        border: 2px black;
+    }
+    .submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+    .rowp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .colp {
+        display: flex;
+        flex-direction: column;
     }
 </style>
