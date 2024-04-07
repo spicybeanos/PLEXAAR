@@ -59,6 +59,7 @@
 <style>
     input {
         font-size: 24px;
+        font-family:"Poppins", sans-serif;
     }
     .text24 {
         font-size: 24px;

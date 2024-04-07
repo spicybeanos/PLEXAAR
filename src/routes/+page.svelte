@@ -39,7 +39,7 @@
         --h2ht: 30px;
     }
     img{
-        width: 50%;
+        width: 100%;
         clip-path: circle(37%);
     }
     .title {
